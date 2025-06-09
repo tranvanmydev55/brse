@@ -1,0 +1,147 @@
+ .login-container {
+     background-image: url('pexels-apasaric-325185.jpg');
+     background-size: cover;
+     background-position: center;
+     min-height: 100vh;
+     padding: 2rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .card {
+     background: rgba(255, 255, 255, 0.95);
+     backdrop-filter: blur(10px);
+     transform: translateY(20px);
+     opacity: 0;
+     animation: slideUp 0.5s ease forwards;
+     border: 2px solid #007bff;
+     border-radius: 15px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+     max-width: 500px;
+     width: 100%;
+ }
+
+ .card-header {
+     background: rgba(0, 123, 255, 0.1);
+     border-bottom: 1px solid #007bff;
+     border-radius: 13px 13px 0 0 !important;
+     padding: 1.5rem;
+ }
+
+ .card-body {
+     padding: 2rem;
+ }
+
+ @keyframes slideUp {
+     from {
+         transform: translateY(50px);
+         opacity: 0;
+     }
+
+     to {
+         transform: translateY(0);
+         opacity: 1;
+     }
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ .form-control {
+     border: 1px solid #ced4da;
+     border-radius: 8px;
+     padding: 0.75rem;
+     animation: fadeIn 0.5s ease forwards;
+ }
+
+ .form-control:focus {
+     box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+     transition: all 0.3s ease;
+     border-color: #007bff;
+ }
+
+ .btn {
+     transition: all 0.3s ease;
+     padding: 0.75rem;
+     border-radius: 8px;
+     font-weight: 500;
+     margin-top: 1rem;
+     animation: fadeIn 0.5s ease forwards;
+ }
+
+ .btn:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+
+ .form-group {
+     margin-bottom: 1.5rem;
+     animation: fadeIn 0.5s ease forwards;
+ }
+
+ .form-check {
+     padding-left: 1.75rem;
+ }
+
+ .social-login {
+     margin-top: 2rem;
+     text-align: center;
+ }
+
+ .social-btn {
+     width: 100%;
+     margin: 0.5rem 0;
+     padding: 0.75rem;
+     border-radius: 8px;
+     font-weight: 500;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.3s ease;
+ }
+
+ .social-btn i {
+     margin-right: 10px;
+ }
+
+ .btn-facebook {
+     background-color: #3b5998;
+     color: white;
+ }
+
+ .btn-google {
+     background-color: #db4437;
+     color: white;
+ }
+
+ .divider {
+     margin: 1.5rem 0;
+     text-align: center;
+     position: relative;
+ }
+
+ .divider::before,
+ .divider::after {
+     content: "";
+     position: absolute;
+     top: 50%;
+     width: 45%;
+     height: 1px;
+     background-color: #dee2e6;
+ }
+
+ .divider::before {
+     left: 0;
+ }
+
+ .divider::after {
+     right: 0;
+ }
